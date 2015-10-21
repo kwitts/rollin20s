@@ -1,0 +1,44 @@
+header {
+  width: 70%;
+  padding: 20px;
+  margin: 0 0 20px;
+}
+header, .dice {
+  width: 70%;
+  margin: 0 auto;
+}
+.column {
+  float: left;
+  width: 40%;
+  background: lightgrey;
+  margin: 0 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rolled {
+  float: none;
+  clear: both;
+  padding: 20px;
+}
+
+.rolled input {
+  padding: 10px;
+  font-size: 18px;
+}
+
+#result span {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+    header, .dice {
+        width: 100%;
+    }
+    .column {
+      float: none;
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+}

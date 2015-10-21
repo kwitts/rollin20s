@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Roll Some Dice</title>
+    <meta content="The HTML5 Herald" name="description">
+    <meta content="SitePoint" name="author">
+
+    <link href="css/styles.css?v=1.0" rel="stylesheet">
+
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+  </head>
+
+  <body>
+    <header>
+      <h1>Roll Some Dice for D&amp;D!</h1>
+      <p>Forgot your dice at home, adventurer? Then roll some virtual ones!</p>
+    </header>
+    <div class=dice>
+      <form name=form>
+        <div class=column>
+          <h2>How many sides on the die?</h2>
+          <p><input checked name=sides onclick="die = 3" type=radio>3 Sided</p>
+          <p><input name=sides onclick="die = 4" type=radio>4 Sided</p>
+          <p><input name=sides onclick="die = 5" type=radio>5 Sided</p>
+          <p><input name=sides onclick="die = 6" type=radio>6 Sided</p>
+          <p><input name=sides onclick="die = 8" type=radio>8 Sided</p>
+          <p><input name=sides onclick="die = 10" type=radio>10 Sided</p>
+          <p><input name=sides onclick="die = 12" type=radio>12 Sided</p>
+          <p><input name=sides onclick="die = 20" type=radio>20 Sided</p>
+          <p><input name=sides onclick="die = 30" type=radio>30 Sided</p>
+          <p><input name=sides onclick="die = 100" type=radio>100 Sided</p>
+        </div>
+        <div class=column>
+          <h2>How many dice do you need to roll?</h2>
+          <p><input checked name=number onclick="dice = 1" type=radio>1</p>
+          <p><input name=number onclick="dice = 2" type=radio>2</p>
+          <p><input name=number onclick="dice = 3" type=radio>3</p>
+          <p><input name=number onclick="dice = 4" type=radio>4</p>
+          <p><input name=number onclick="dice = 5" type=radio>5</p>
+          <p><input name=number onclick="dice = 6" type=radio>6</p>
+          <p><input name=number onclick="dice = 7" type=radio>7</p>
+          <p><input name=number onclick="dice = 8" type=radio>8</p>
+          <p><input name=number onclick="dice = 9" type=radio>9</p>
+          <p><input name=number onclick="dice = 10" type=radio>10</p>
+        </div>
+        <div class=rolled>
+          <input name=button onclick="diceRoll(die, dice)" type=button value="Roll">
+          <h2 id="result">Roll Some Dice!
+            <h2></div>
+          </form>
+
+        </div>
+        <script src="js/script.js"></script>
+      </body>
+    </html>
