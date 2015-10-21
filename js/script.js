@@ -1,4 +1,4 @@
-var die = 3;
+var die = 4;
 var dice = 1;
 function diceRoll(die, dice) {
   var roll = 0;
